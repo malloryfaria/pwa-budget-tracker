@@ -1,7 +1,7 @@
 // create variable to hold db connection
 let db;
-// establish a connection to IndexedDB database called 'pwa_budget' and set it to version 1
-const request = indexedDB.open('pwa_budget', 1);
+// establish a connection to IndexedDB database called 'budgets' and set it to version 1
+const request = indexedDB.open('budgets', 1);
 
 // this event will emit if the database version changes (nonexistant to version 1, v1 to v2, etc.)
 request.onupgradeneeded = function(event) {
@@ -53,7 +53,7 @@ request.onsuccess = function(event) {
             getAll.onsuccess = function() {
             // if there was data in indexedDb's store, let's send it to the api server
             if (getAll.result.length > 0) {
-            fetch('/api/transaction', {
+            fetch('/api/budgets', {
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {
