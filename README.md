@@ -44,7 +44,7 @@ This project is deployed at: https://frozen-wildwood-23744.herokuapp.com/
 
 Here is a screenshot from the application:
 
-![landing page](.public/images/screenshot.jpg)
+![landing page](public/images/screenshot.jpg)
 
 
 ## Usage
