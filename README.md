@@ -8,7 +8,7 @@
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Deployed](#deployed-link)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 - [Usage](#usage)
 - [Languages](#languages)
 - [License](#license)
@@ -40,11 +40,11 @@ THEN the deposits or expenses added while they were offline are added to their t
 ## Deployed Link
 
 This project is deployed at: https://frozen-wildwood-23744.herokuapp.com/ 
-## Screenshots
+## Screenshot
 
-Here are some screenshots from the application:
+Here is a screenshot from the application:
 
-![landing page](assets/images/screenshot.jpg)
+![landing page](.public/images/screenshot.jpg)
 
 
 ## Usage
