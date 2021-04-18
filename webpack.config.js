@@ -1,8 +1,8 @@
+const path = require("path");
 const webpack = require("webpack");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
-const path = require("path");
 
 
 const config = {
@@ -45,7 +45,7 @@ const config = {
       analyzerMode: "static"
     }),
     new WebpackPwaManifest({
-      name: "PWA Budget Tracker",
+      name: "Budget Tracker",
       short_name: "Budget",
       description: "An app that allows you to budget online or offline.",
       start_url: "../index.html",
